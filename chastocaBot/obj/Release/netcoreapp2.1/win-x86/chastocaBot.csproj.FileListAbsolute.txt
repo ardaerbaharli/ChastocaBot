@@ -1,0 +1,16 @@
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.exe
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.deps.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.runtimeconfig.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.runtimeconfig.dev.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\win-x86\chastocaBot.pdb
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.csprojAssemblyReference.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.Properties.Resources.resources
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.veri.resources
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.csproj.GenerateResource.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.AssemblyInfoInputs.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.AssemblyInfo.cs
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\win-x86\chastocaBot.pdb

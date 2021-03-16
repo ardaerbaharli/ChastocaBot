@@ -1,0 +1,28 @@
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.deps.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.runtimeconfig.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.runtimeconfig.dev.json
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.pdb
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.csprojAssemblyReference.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.Properties.Resources.resources
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.veri.resources
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.csproj.GenerateResource.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.AssemblyInfoInputs.cache
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.AssemblyInfo.cs
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.dll
+D:\repos 28.10.19\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.pdb
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.deps.json
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.runtimeconfig.json
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.runtimeconfig.dev.json
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.dll
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp2.1\chastocaBot.pdb
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.csprojAssemblyReference.cache
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.Properties.Resources.resources
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.veri.resources
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.csproj.GenerateResource.cache
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.csproj.CoreCompileInputs.cache
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.AssemblyInfoInputs.cache
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.AssemblyInfo.cs
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.dll
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.pdb
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp2.1\chastocaBot.genruntimeconfig.cache
