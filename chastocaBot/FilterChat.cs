@@ -53,7 +53,7 @@ namespace chastocaBot
             if (isLink)
             {
                 Moderation.Timeout(chMessage.Username, 15);
-                LogHandler.TxtLogs(chMessage, isLink);
+                LogHandler.Log(chMessage, isLink);
             }
             return isLink;
         }
