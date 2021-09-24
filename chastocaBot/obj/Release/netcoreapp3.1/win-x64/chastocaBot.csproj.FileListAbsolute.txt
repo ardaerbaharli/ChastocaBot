@@ -250,7 +250,6 @@ C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\wi
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\win-x64\chastocaBot.pdb
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\win-x64\chastocaBot.genruntimeconfig.cache
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\win-x64\chastocaBot.csprojAssemblyReference.cache
-C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\appSecrets.json
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -260,4 +259,4 @@ C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\wi
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Primitives.dll
-C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\mscordaccore_amd64_amd64_4.700.20.56602.dll
+C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\win-x64\mscordaccore_amd64_amd64_4.700.21.11102.dll

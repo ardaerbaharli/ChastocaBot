@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D3DHSOAuiLz1l0KqD+SuMmC8cgVjhOMPudVKTa69o7vW+SiZV9AYWZvlemO722xEObRgxRBS0gQiFh+Kdxw4uQ==",
+  "dgSpecHash": "J9fccCHbTQdClm50XKpl57RxldLHAfvP3W0ne++aw3h9hwm84zV4tmvJbSq3A8bsMax+TiEzCPvgPIe+CVlImw==",
   "success": true,
   "projectFilePath": "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\chastocaBot.csproj",
   "expectedPackageFiles": [
@@ -110,9 +110,10 @@
     "C:\\Users\\arda_\\.nuget\\packages\\twitchlib.client.enums\\3.1.4\\twitchlib.client.enums.3.1.4.nupkg.sha512",
     "C:\\Users\\arda_\\.nuget\\packages\\twitchlib.client.models\\3.1.5\\twitchlib.client.models.3.1.5.nupkg.sha512",
     "C:\\Users\\arda_\\.nuget\\packages\\twitchlib.communication\\1.0.3\\twitchlib.communication.1.0.3.nupkg.sha512",
-    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.11\\microsoft.netcore.app.runtime.win-x64.3.1.11.nupkg.sha512",
-    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.11\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.11.nupkg.sha512",
-    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.11\\microsoft.aspnetcore.app.runtime.win-x64.3.1.11.nupkg.sha512"
+    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.13\\microsoft.netcore.app.runtime.win-x64.3.1.13.nupkg.sha512",
+    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.13\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.13.nupkg.sha512",
+    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.13\\microsoft.aspnetcore.app.runtime.win-x64.3.1.13.nupkg.sha512",
+    "C:\\Users\\arda_\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }

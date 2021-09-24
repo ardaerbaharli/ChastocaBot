@@ -35,7 +35,6 @@ C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\ch
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\chastocaBot.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\chastocaBot.pdb
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\obj\Release\netcoreapp3.1\chastocaBot.genruntimeconfig.cache
-C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\appSecrets.json
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\arda_\source\repos\chastocaBot\chastocaBot\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
