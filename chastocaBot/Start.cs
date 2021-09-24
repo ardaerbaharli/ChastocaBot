@@ -1,37 +1,41 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
+﻿using System;
+using System.Threading;
 
 namespace chastocaBot
 {
     class Start
     {
         public static string channelName;
-        public static string botName = "TwitchBotName";
-        public static string botToken = "";
-        public static string clientId;
-        public static string streamerToken;
-        public static string connectionString;
-        private static void Main()
-        {            
-            var builder = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appSecrets.json", optional: false, reloadOnChange: true);
+        public static string botName = "chastocaBot";
+        public static string botToken = "1zudeytvsdlqnlex3kk2cnxezftehg";
+        public static string clientId = "gp762nuuoqcoxypju8c569th9wz7q5";
+        public static string streamerToken = "tr984cf1tcar6gw7qnytfendsisqcv";
 
-            IConfigurationRoot configuration = builder.Build();
-
-            botName = configuration.GetSection("TwitchSettings").GetConnectionString("botName");
-            botToken = configuration.GetSection("TwitchSettings").GetConnectionString("botToken");
-            clientId = configuration.GetSection("TwitchSettings").GetConnectionString("clientId");
-            streamerToken = configuration.GetSection("TwitchSettings").GetConnectionString("streamerToken");
-            connectionString = configuration.GetSection("DatabaseSettings").GetConnectionString("connectionString");
-
+        private static void Main(string[] args)
+        {
+            if (!IsNullOrEmpty(args))
+            {
+                channelName = args[0];
+                Console.WriteLine(channelName);
+            }
+            else
+            {
+                Console.WriteLine("Channel name:");
+                channelName = Console.ReadLine();
+            }
+            // add the channel to the database as running
+            // if it is already in the database, change status as stopped
+            Console.Title = channelName;
             ChannelBot bot = new ChannelBot();
-            Console.WriteLine("Channel name:");
-            channelName = Console.ReadLine();
+
             bot.Connect();
-            Console.ReadLine();
+            Thread.Sleep(-1);
             bot.Disconnect();
+        }
+
+        private static bool IsNullOrEmpty(string[] myStringArray)
+        {
+            return myStringArray == null || myStringArray.Length < 1;
         }
     }
 }
