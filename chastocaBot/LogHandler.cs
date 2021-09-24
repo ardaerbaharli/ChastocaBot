@@ -7,21 +7,54 @@ namespace chastocaBot
 {
     class LogHandler
     {
-        public static void TxtLogs(ChatMessage chMessage, bool? isLink)
+        public static void Log(ChatMessage msg = null, bool? isLink = null, SentMessage sentMsg = null)
         {
-            string path;
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string logDirectory = Path.Combine(appDataPath, @"Chastoca");
+            logDirectory = Path.Combine(logDirectory, "chastocaBotTwitch");
+            logDirectory = Path.Combine(logDirectory, "logs");
+            logDirectory = Path.Combine(logDirectory, Start.channelName);
+            if (!Directory.Exists(logDirectory))
+                Directory.CreateDirectory(logDirectory);
+
+            string textFileName = string.Format("{0}.txt", DateTime.Today.ToString("dd-MM-yyyy"));
+
             if (isLink == true)
-                path = "E:\\chatLogs\\" + Start.channelName + "\\" + DateTime.Today.ToString("dd-MM-yyyy") + "_LINKS_" + ".txt";
-            else
-                path = "E:\\chatLogs\\" + Start.channelName + "\\" + DateTime.Today.ToString("dd-MM-yyyy") + ".txt";
-            System.IO.Directory.CreateDirectory("E:\\chatLogs\\" + Start.channelName);
-            File.AppendAllText(path, LogMessage(chMessage));
+                textFileName = string.Format("{0}_Links", textFileName);
+
+            logDirectory = Path.Combine(logDirectory, textFileName);
+            File.AppendAllText(logDirectory, ToFile(msg, sentMsg));
+            ToConsole(msg, sentMsg);
         }
 
-        public static string LogMessage(ChatMessage chMessage)
+        public static void Log(Log log)
         {
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string logDirectory = Path.Combine(appDataPath, @"Chastoca");
+            logDirectory = Path.Combine(logDirectory, "chastocaBotTwitch");
+            logDirectory = Path.Combine(logDirectory, "logs");
+            logDirectory = Path.Combine(logDirectory, Start.channelName);
+            if (!Directory.Exists(logDirectory))
+                Directory.CreateDirectory(logDirectory);
+
+            string textFileName = string.Format("{0}.txt", DateTime.Today.ToString("dd-MM-yyyy"));
+
+            if (isLink == true)
+                textFileName = string.Format("{0}_Links", textFileName);
+
+            logDirectory = Path.Combine(logDirectory, textFileName);
+            File.AppendAllText(logDirectory, ToFile(msg, sentMsg));
+            ToConsole(msg, sentMsg);
+        }
+        public static string ToFile(ChatMessage chMessage = null, SentMessage sentMessage = null)
+        {
+            var currentBadges = chMessage == null ? sentMessage.Badges : chMessage.Badges;
+            string username = chMessage == null ? sentMessage.DisplayName : chMessage.DisplayName;
+            string message = chMessage == null ? sentMessage.Message : chMessage.Message;
+
+
             List<string> badges = new List<string>();
-            foreach (var badge in chMessage.Badges)
+            foreach (var badge in currentBadges)
             {
                 switch (badge.Key.ToString())
                 {
@@ -52,17 +85,35 @@ namespace chastocaBot
 
                 // todo first 10 badge + bişey daha vardı
             }
-            string logMessage = string.Format("{0} >>>> [{1}] [{2}] [{3}] {4}: {5} {6}  ", DateTime.Now,
-           badges.Count >= 1 ? badges[0] : "",
-           badges.Count >= 2 ? badges[1] : "",
-           badges.Count >= 3 ? badges[2] : "",
-           chMessage.Username, chMessage.Message, Environment.NewLine);
+            string logMessage = DateTime.Now + " >>>> ";
+            for (int i = 0; i < badges.Count; i++)
+            {
+                logMessage += string.Format("[{0}]", badges[i]);
+            }
+            logMessage += " " + username + " : ";
+            logMessage += " " + message;
+            logMessage += Environment.NewLine;
+            // string logMessage = string.Format("{0} >>>> [{1}] [{2}] [{3}] {4}: {5} {6}  ", DateTime.Now,
+            //badges.Count >= 1 ? badges[0] : "",
+            //badges.Count >= 2 ? badges[1] : "",
+            //badges.Count >= 3 ? badges[2] : "",
+            //username, message, Environment.NewLine);
 
             return logMessage;
         }
-        public static void ConsoleLog(ChatMessage chMessage)
+        public static void ToConsole(ChatMessage chMessage = null, SentMessage sentMessage = null)
         {
-            Console.WriteLine(DateTime.Now + " >>>>>  " + chMessage.Username + ":" + chMessage.Message);
+            string username = chMessage == null ? sentMessage.DisplayName : chMessage.DisplayName;
+            string message = chMessage == null ? sentMessage.Message : chMessage.Message;
+            Console.WriteLine(DateTime.Now + " >>>>>  " + username + " : " + message);
+        }
+        public static void ReportCrash(Exception ex)
+        {
+            Log crashReport = new Log();
+            crashReport.LogName = "CrashReports";
+            crashReport.Sender = " ";
+            crashReport.Message = string.Format("Exception message: {0}\nStack trace:\n{1}", ex.Message, ex.StackTrace);
+            Log(crashReport);
         }
     }
 }
