@@ -22,19 +22,24 @@ namespace chastocaBot
             client.OnConnected += Client_OnConnected;
             client.OnMessageReceived += Client_OnMessageReceivedAsync;
             client.OnReSubscriber += Client_OnReSubscriber;
+            client.OnMessageSent += Client_OnMessageSent;
             client.Connect();
 
             api = new TwitchAPI();
             api.Settings.ClientId = Start.clientId;
             api.Settings.AccessToken = Start.botToken;
-
-            Users usr = await api.V5.Users.GetUserByNameAsync(Start.channelName);
+            Users usr = await api.V5.Users.GetUserByNameAsync("chastocaa");
             channelId = usr.Matches.First().Id;
+        }
+
+        private void Client_OnMessageSent(object sender, TwitchLib.Client.Events.OnMessageSentArgs e)
+        {
+            LogHandler.Log(sentMsg: e.SentMessage);
         }
         private void Client_OnReSubscriber(object sender, TwitchLib.Client.Events.OnReSubscriberArgs e)
         {
             client.SendMessage(Start.channelName, $"{e.ReSubscriber.DisplayName} celebrating {e.ReSubscriber.Months}. month!");
-        }       
+        }
         private void Client_OnConnected(object sender, TwitchLib.Client.Events.OnConnectedArgs e)
         {
             Console.WriteLine("Connected");
@@ -44,14 +49,14 @@ namespace chastocaBot
             string message = e.ChatMessage.Message;
             string[] fragmentedMessage = message.Split(' ', ',', '.', ':', ';', '\t');
 
-            LogHandler.TxtLogs(e.ChatMessage, null);
-            LogHandler.ConsoleLog(e.ChatMessage);
+            LogHandler.Log(e.ChatMessage);
 
             if (filterSwitch == true && (e.ChatMessage.IsModerator == false || e.ChatMessage.IsBroadcaster == false || e.ChatMessage.IsVip == false))
                 if (FilterChat.Filter(fragmentedMessage, e.ChatMessage) == true)
                     return;
             string chatCommand = fragmentedMessage.First();
             string displayName = e.ChatMessage.DisplayName;
+            client.SendMessage(Start.channelName, $"{message}");
             // authorized commands
             if (IsAuthorized(e.ChatMessage))
             {
@@ -113,19 +118,17 @@ namespace chastocaBot
             else
             {
                 if (chatCommand.Equals("!uptime"))
-                {
                     await Uptime();
-                }
                 else if (chatCommand.StartsWith("!"))
                 {
                     // check if the message exist and if exist get the answer
                     if (DatabaseHandler.DoesExistInCommands(fragmentedMessage[0]))
                     {
-                        string answer = DatabaseHandler.FindCommand(fragmentedMessage[0]);
+                        string answer = DatabaseHandler.GetAnswer(fragmentedMessage[0]);
                         client.SendMessage(Start.channelName, $"{answer} @{e.ChatMessage.DisplayName}");
                     }
                 }
-            }           
+            }
         }
         private void Ban(string[] fragmentedMessage)
         {
