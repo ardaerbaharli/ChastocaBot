@@ -7,9 +7,9 @@ namespace chastocaBot
     {
         public static string channelName;
         public static string botName = "chastocaBot";
-        public static string botToken = "1zudeytvsdlqnlex3kk2cnxezftehg";
+        public static string botToken = "enter the token of bot";
         public static string clientId = "gp762nuuoqcoxypju8c569th9wz7q5";
-        public static string streamerToken = "tr984cf1tcar6gw7qnytfendsisqcv";
+        public static string streamerToken = "enter the token of streamer";
 
         private static void Main(string[] args)
         {

@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\chastocaBot.csproj": {}
+    "/Users/ardaerbaharli/chastocaBot/chastocaBot/chastocaBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\chastocaBot.csproj": {
+    "/Users/ardaerbaharli/chastocaBot/chastocaBot/chastocaBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\chastocaBot.csproj",
+        "projectUniqueName": "/Users/ardaerbaharli/chastocaBot/chastocaBot/chastocaBot.csproj",
         "projectName": "chastocaBot",
-        "projectPath": "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\chastocaBot.csproj",
-        "packagesPath": "C:\\Users\\arda_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arda_\\source\\repos\\chastocaBot\\chastocaBot\\obj\\",
+        "projectPath": "/Users/ardaerbaharli/chastocaBot/chastocaBot/chastocaBot.csproj",
+        "packagesPath": "/Users/ardaerbaharli/.nuget/packages/",
+        "outputPath": "/Users/ardaerbaharli/chastocaBot/chastocaBot/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\arda_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ardaerbaharli/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,8 +71,16 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
