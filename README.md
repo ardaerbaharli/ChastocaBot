@@ -1,5 +1,5 @@
 # chastocaBot
-Not totally complete but ~~~~working~~~~ **not working** Twitch moderation chat bot.
+Not totally complete but ~~~working~~~~ **not working** Twitch moderation chat bot.
 
 <b>Commands</b>
 
